@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "612268440902",
+    "firebase_url": "https://sampletesterapp.firebaseio.com",
+    "project_id": "sampletesterapp",
+    "storage_bucket": "sampletesterapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:612268440902:android:b7c71b3b89d01bbe2cb947",
+        "android_client_info": {
+          "package_name": "com.example.sampletesterapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "612268440902-ssj0nvv7kv8gqdkem7fjpfrlhtlo1d4t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC10gaEOPUo6l6h8Fnl3YFJVEUejxhKU9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "612268440902-ssj0nvv7kv8gqdkem7fjpfrlhtlo1d4t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

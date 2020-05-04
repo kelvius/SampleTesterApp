@@ -1,6 +1,7 @@
 package com.example.sampletesterapp.ui.auth
 
 import android.os.Bundle
+import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -28,6 +29,21 @@ class LoginActivity : AppCompatActivity(),
         binding.viewmodel = viewModel
 
         viewModel.authListener = this
+
+
+        crashButton.text = "Crash!"
+        //Enable this to test CrashLitics reporting toll at
+        //https://console.firebase.google.com/project/sampletesterapp/crashlytics/app/
+        //android:com.example.sampletesterapp/issues?time=last-seven-days&state=open&type=crash
+
+//        crashButton.setOnClickListener {
+//            throw RuntimeException("Test Crash") // Force a crash
+//            addContentView(crashButton, ViewGroup.LayoutParams(
+//                ViewGroup.LayoutParams.MATCH_PARENT,
+//                ViewGroup.LayoutParams.WRAP_CONTENT))
+//        }
+
+
     }
 
     override fun onStarted() {

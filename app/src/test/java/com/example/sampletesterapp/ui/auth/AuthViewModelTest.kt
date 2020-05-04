@@ -2,6 +2,7 @@ package com.example.sampletesterapp.ui.auth
 
 import com.example.sampletesterapp.data.network.MyApi
 import okhttp3.ResponseBody
+import org.junit.Assert.assertThat
 import org.junit.Assert.assertTrue
 import org.junit.Rule
 import org.junit.Test
@@ -10,7 +11,6 @@ import org.mockito.junit.MockitoRule
 import retrofit2.Call
 import retrofit2.Response
 import java.io.IOException
-
 
 /**
  *
@@ -61,11 +61,15 @@ import java.io.IOException
  * the optional description, why the test is disabled.
  *
  * Source:
+ *
  * Junit
  * https://www.vogella.com/tutorials/JUnit/article.html
  * https://www.youtube.com/watch?v=dlWjn4QrVK4
+ * https://developer.android.com/training/testing/unit-testing/local-unit-tests
+ *
  * Mockito
  * https://www.vogella.com/tutorials/Mockito/article.html
+ *
  * Robolectric
  * http://robolectric.org/
  *
@@ -73,16 +77,16 @@ import java.io.IOException
  * assertTrue():
  * assertFalse():
  *
+ * Example for Mocking Database
+ * @Mock
+ * var databaseMock: MyDatabase? = null
+ *
+ * Tells Mockito to create the mocks based on the @Mock annotation
+ * @Rule
+ * var mockitoRule: MockitoRule? = MockitoJUnit.rule()
  */
 
 class AuthViewModelTest {
-//Example for Mocking Database
-//@Mock
-//var databaseMock: MyDatabase? = null
-//
-//Tells Mockito to create the mocks based on the @Mock annotation
-//@Rule
-//var mockitoRule: MockitoRule? = MockitoJUnit.rule()
 
     @Test
     fun onLoginButtonClick_success() {

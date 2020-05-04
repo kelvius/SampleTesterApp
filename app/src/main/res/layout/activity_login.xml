@@ -22,9 +22,10 @@
             android:layout_height="wrap_content"
             android:padding="16dp">
 
-            <ImageView
-                android:id="@+id/image_view_logo"
+            <Button
+                android:id="@+id/crashButton"
                 android:layout_width="80dp"
+                android:text="Crash!"
                 android:layout_height="80dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="75dp" />
@@ -33,7 +34,7 @@
                 android:id="@+id/linearLayout1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/image_view_logo"
+                android:layout_below="@id/crashButton"
                 android:orientation="vertical">
 
                 <TextView
