@@ -14,6 +14,7 @@ import com.example.sampletesterapp.databinding.ActivityLoginBinding
 import com.example.sampletesterapp.utils.hide
 import com.example.sampletesterapp.utils.show
 import com.example.sampletesterapp.utils.toast
+import com.testfairy.TestFairy
 import kotlinx.android.synthetic.main.activity_login.*
 
 
@@ -29,6 +30,8 @@ class LoginActivity : AppCompatActivity(),
         binding.viewmodel = viewModel
 
         viewModel.authListener = this
+        TestFairy.setServerEndpoint("https://6427267.testfairy.com")
+        TestFairy.begin(this, "SDK-udGnr6Uz");
 
 
         crashButton.text = "Crash!"

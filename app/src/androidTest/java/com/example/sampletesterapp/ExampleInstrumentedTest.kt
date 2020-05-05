@@ -39,6 +39,7 @@ class ExampleInstrumentedTest {
     @JvmField
     val rule:ActivityTestRule<LoginActivity> = ActivityTestRule(
         LoginActivity::class.java)
+
     @Test
     fun useAppContext() {
         // Context of the app under test.

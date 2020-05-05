@@ -122,6 +122,4 @@ class AuthViewModelTest {
             e.printStackTrace()
         }
     }
-
-
 }
