@@ -10,6 +10,9 @@ apply plugin: 'com.google.gms.google-services'
 // Apply the Crashlytics Gradle plugin
 apply plugin: 'com.google.firebase.crashlytics'
 
+// Firebase distribution
+apply plugin: 'com.google.firebase.appdistribution'
+
 
 android {
     compileSdkVersion 29
@@ -38,6 +41,37 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            firebaseAppDistribution {
+               // releaseNotesFile="/path/to/releasenotes.txt"
+                releaseNotes="Release notes for demo version"
+                testers="valeriojohnkelvin@gmail.com"
+                //groups="TesterGods"
+            }
+        }
+    }
+
+    flavorDimensions "version"
+    productFlavors {
+        demon {
+            dimension "version"
+            firebaseAppDistribution {
+                releaseNotes="Release notes for demo version"
+                testers="valeriojohnkelvin@gmail.com"
+                //groups="TesterGods"
+            }
+        }
+        angel {
+            dimension "version"
+            firebaseAppDistribution {
+                releaseNotes="Release notes for full version"
+                testers="valeriojohnkelvin@gmail.com"
+                //groups="TesterGods"
+            }
+        }
     }
 }
 
