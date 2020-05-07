@@ -45,11 +45,13 @@ android {
 
     buildTypes {
         release {
-            firebaseAppDistribution {
-               // releaseNotesFile="/path/to/releasenotes.txt"
+
+                firebaseAppDistribution {
+                serviceCredentialsFile=System.getenv("GOOGLE_APPLICATION_CREDENTIALS")
                 releaseNotes="Release notes for demo version"
                 testers="valeriojohnkelvin@gmail.com"
                 //groups="TesterGods"
+
             }
         }
     }
