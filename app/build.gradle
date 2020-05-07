@@ -69,6 +69,7 @@ android {
         angel {
             dimension "version"
             firebaseAppDistribution {
+                serviceCredentialsFile=System.getenv("GOOGLE_APPLICATION_CREDENTIALS")
                 releaseNotes="Release notes for full version"
                 testers="valeriojohnkelvin@gmail.com"
                 //groups="TesterGods"
