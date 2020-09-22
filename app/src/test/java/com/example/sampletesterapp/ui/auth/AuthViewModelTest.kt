@@ -4,6 +4,7 @@ import com.example.sampletesterapp.data.network.MyApi
 import okhttp3.ResponseBody
 import org.junit.Assert.assertThat
 import org.junit.Assert.assertTrue
+import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
 import org.mockito.junit.MockitoJUnit
@@ -88,6 +89,7 @@ import java.io.IOException
 
 class AuthViewModelTest {
 
+    @Ignore
     @Test
     fun onLoginButtonClick_success() {
         var email = "probelalkhan@gmail.com"
@@ -106,6 +108,7 @@ class AuthViewModelTest {
         }
     }
 
+    @Ignore
     @Test
     fun onLoginButtonClick_failed() {
         var email = "belalkhan@gmail.com"
