@@ -16,6 +16,7 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 import org.junit.Assert.*
+import org.junit.Ignore
 import org.junit.Rule
 
 /**
@@ -57,6 +58,7 @@ class ExampleInstrumentedTest {
         onView(withId(R.id.et_password)).perform(typeText("123456"))
     }
 
+    @Ignore
     @Test
     fun user_can_enter_text_and_display_success() {
         onView(withId(R.id.et_email)).perform(typeText("probelalkhan@gmail.com"))
