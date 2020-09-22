@@ -24,6 +24,8 @@ buildscript {
 
         // App Distribution using firebase
         classpath 'com.google.firebase:firebase-appdistribution-gradle:1.4.0'
+
+        classpath 'javax.xml.bind:jaxb-api:2.3.0'
     }
 }
 
