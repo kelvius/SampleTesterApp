@@ -65,6 +65,6 @@ class ExampleInstrumentedTest {
         onView(withId(R.id.et_password)).perform(typeText("123456"))
         Espresso.closeSoftKeyboard()
         onView(withId(R.id.btn_submit)).perform(click())
-        onView(withId(R.id.tv_text)).check(matches(withText("Welcome,probelalkhan@gmail.com")))
+        onView(withId(R.id.tv_text)).check(matches(withText("Welcome,probelalkhan@gmailbok")))
     }
 }
